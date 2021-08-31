@@ -4,6 +4,7 @@ pipeline{
             stage('Make Directory'){
                 steps{
                     sh "mkdir ~/jenkins-tutorial-test"
+                    docker ps
                 }
             }
             stage('Make Files'){
